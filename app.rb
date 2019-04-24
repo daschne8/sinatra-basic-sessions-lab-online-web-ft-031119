@@ -13,8 +13,9 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    @session["item"] = params[:cart_item]
-    "#{@session["item"]}"
+    "#{params[:cart_item]}"
+    # @session["item"] = params[:cart_item]
+    # "#{@session["item"]}"
   end
 
 end
